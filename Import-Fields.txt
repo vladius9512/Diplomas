@@ -1,0 +1,136 @@
+View_Absolvire_FDS_ProbeAbsolventi
+Atentie la Diacritice
+
+Exista cel mult 2 probe
+
+
+
+[ID_AbsolvireProgram]
+      ,[ID_AnUnivAbsolvire]
+      ,[ID_UniversitateAbsolvita]
+      ,[ID_FacultateAbsolvita]
+      ,[ID_DomeniuAbsolvit]
+      ,[ID_ProgramStudiuAbsolvit]
+      ,[NrCrediteProgram] //
+      ,[TitlulObtinut] //
+      ,[SesiuneExamenAbsolvire] // 
+      ,[AnExamenAbsolvire]  // Promotia
+      ,[NrProbeExamenAbsolvire]
+      ,[MedieMinimaPromovare]
+      ,[ID_CicluInv]
+      ,[ID_FormaInv]
+      ,[NumeRector]
+      ,[NumeDecan]
+      ,[NumeSecretarSefUniversitate]
+      ,[NumeSecretarSefFacultate]
+      ,[ID_UniversitateAcordaDiploma]
+      ,[ID_FacultateAcordaDiploma]
+      ,[DenumireProba] //
+      ,[NrCrediteProba] //
+      ,[NotaMinimaPromovare]
+      ,[ID_PachetAbsolvire]
+      ,[ID_StudentAbsolventProba]
+      ,[Nota] // Nota - arab - obtinuta la Proba de Absolvent
+      ,[NotaInCifreSiLitere] // Nota - arab + litere - obtinuta la Proba de Absolvent
+      ,[ID_AbsolvireStudent]
+      ,[ID_Student] //
+      ,[Nume]
+      ,[Initiale]
+      ,[Prenume]
+      ,[NumeCasatorie]
+      ,[DataNastere] //
+      ,[ZiNastere] //
+      ,[LunaNastere] //
+      ,[AnNastere] //
+      ,[LunaNastereInLitere] //
+      ,[MedieFinalaAbsolvire] //
+      ,[MedieFinalaAni]
+      ,[SerieDiploma]
+      ,[NrDiploma]
+      ,[NrOrdineIntern]
+      ,[ID_LocalitateNastere]
+      ,[ID_JudetNastere]
+      ,[ID_TaraNastere]
+      ,[ID_AbsolvireProgramProba]
+      ,[ID_NotaStudentMateriePachetAbsolvire]
+      ,[NumeIntreg] // Nume + Initiale + Prenume + Nume Casatorie
+      ,[ID_N_JudetNastere]
+      ,[ID_N_LocalitateNastere]
+      ,[ID_N_TaraNastere]
+      ,[DenumireTaraNastere] //
+      ,[DenumireLocalitateNastere] //
+      ,[DenumireJudetNastere] //
+      ,[ID_N_SituatieScolaraAbsolvire]
+	  
+      ,[FormulaAdresare] // este nearticulata
+	  FormulaAdresareArticulat // oamnei pt oamna / omnului pt omnul
+	  FormulaAdresareSufix // ă pt oamna / l pt omnul
+      ,[ID_Facultate]
+      ,[DenumireFacultate]
+      ,[ID_FC]
+      ,[ID_FCForma]
+      ,[ID_TipCiclu]
+      ,[DenumireCicluInv]
+      ,[ID_TipFormaInv]
+      ,[DenumireFormaInv]
+      ,[ID_Domeniu]
+      ,[DenumireDomeniu] // Demeniu Studiu - Articulat
+      ,[ID_Specializare]
+      ,[DenumireSpecializare] // Denumire Specializare - Articulat
+      ,[ID_AnUniv]
+      ,[DenumireAnUniversitar]
+      ,[id_metaspecializare]
+      ,[ID_N_Facultate]
+      ,[ID_N_DomeniuFundamental]
+      ,[ID_N_Domeniu_Studiu]
+      ,[id_n_programdestudiu]
+      ,[UserIdComisie]
+      ,[UsernameComisie]
+      ,[DENUMIRE] // Denumire Program de Studii
+      ,[Universitate] // Denumire Universitate + Field_001_Value = Denumire Universitate Articulat
+      ,[Facultate] // Denumirea Facultate
+      ,[Tara]
+      ,[Localitate]
+      ,[DomeniuStudiu]
+      ,[Specializare]
+      ,[FormaInvatamant] //
+      ,[CicluDeStudii] //
+      ,[LimbaPredare] //
+      ,[An]
+	  
+	  //////////////////////////////////////////////////
+	  ,DurataStudiilor
+	  ,ID-Intern-Diploma // Obligatoriu: Cand se asociaza Identificator-Serie-Numar se completeaza automat cu valoarea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT        dbo.AbsolvireProgram.ID_AbsolvireProgram, dbo.AbsolvireProgram.ID_AnUnivAbsolvire, dbo.AbsolvireProgram.ID_UniversitateAbsolvita, dbo.AbsolvireProgram.ID_FacultateAbsolvita, 
+                         dbo.AbsolvireProgram.ID_DomeniuAbsolvit, dbo.AbsolvireProgram.ID_ProgramStudiuAbsolvit, dbo.AbsolvireProgram.NrCrediteProgram, dbo.AbsolvireProgram.TitlulObtinut, 
+                         dbo.AbsolvireProgram.SesiuneExamenAbsolvire, dbo.AbsolvireProgram.AnExamenAbsolvire, dbo.AbsolvireProgram.NrProbeExamenAbsolvire, dbo.AbsolvireProgram.MedieMinimaPromovare, 
+                         dbo.AbsolvireProgram.ID_CicluInv, dbo.AbsolvireProgram.ID_FormaInv, dbo.AbsolvireProgram.NumeRector, dbo.AbsolvireProgram.NumeDecan, dbo.AbsolvireProgram.NumeSecretarSefUniversitate, 
+                         dbo.AbsolvireProgram.NumeSecretarSefFacultate, dbo.AbsolvireProgram.ID_UniversitateAcordaDiploma, dbo.AbsolvireProgram.ID_FacultateAcordaDiploma, dbo.View_FDS.ID_Facultate, 
+                         dbo.View_FDS.DenumireFacultate, dbo.View_FDS.ID_FC, dbo.View_FDS.ID_FCForma, dbo.View_FDS.ID_TipCiclu, dbo.View_FDS.DenumireCicluInv, dbo.View_FDS.ID_TipFormaInv, 
+                         dbo.View_FDS.DenumireFormaInv, dbo.View_FDS.ID_Domeniu, dbo.View_FDS.DenumireDomeniu, dbo.View_FDS.ID_Specializare, dbo.View_FDS.DenumireSpecializare, dbo.View_FDS.ID_AnUniv, 
+                         dbo.View_FDS.DenumireAnUniversitar, dbo.View_FDS.id_metaspecializare, dbo.View_FDS.ID_N_Facultate, dbo.View_FDS.ID_N_DomeniuFundamental, dbo.View_FDS.ID_N_Domeniu_Studiu, 
+                         dbo.View_FDS.id_n_programdestudiu, dbo.View_FDS.UserIdComisie, dbo.View_FDS.UsernameComisie, dbo.View_FDS.DENUMIRE, dbo.View_FDS.Universitate, dbo.View_FDS.Facultate, dbo.View_FDS.Tara, 
+                         dbo.View_FDS.Localitate, dbo.View_FDS.DomeniuStudiu, dbo.View_FDS.Specializare, dbo.View_FDS.FormaInvatamant, dbo.View_FDS.CicluDeStudii, dbo.View_FDS.LimbaPredare, dbo.View_FDS.An, 
+                         dbo.View_FDS.DURATA, dbo.View_FDS.PUNCTE_CREDIT
+FROM            dbo.AbsolvireProgram INNER JOIN
+                         dbo.View_FDS ON dbo.AbsolvireProgram.ID_ProgramStudiuAbsolvit = dbo.View_FDS.ID_Specializare
